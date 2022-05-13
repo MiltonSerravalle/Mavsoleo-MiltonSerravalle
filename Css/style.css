@@ -1,0 +1,586 @@
+* {
+    padding: 0%;
+    margin: 0%;
+
+}
+
+/*GRID CONTEINER*/
+.conteiner {
+    display: grid;
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+/* HEADER */
+.bodyHeader {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bodyHeaderNav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: black;
+    justify-content: center;
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+.bodyHeaderNav li a {
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bodyHeaderNav li a:hover {
+    background: rgb(61, 248, 4);
+    color: rgb(14, 1, 1);
+}
+
+.bodyHeaderMenu label,
+.menu {
+    display: none;
+}
+
+#buttonMenu {
+    display: none;
+}
+
+/*FOOTER*/
+.bodyFoot {
+    grid-area: footer;
+    background-color: grey;
+}
+
+.bodyFoot ul {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+}
+
+.bodyFoot ul li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+.bodyFoot ul li a {
+    display: block;
+    color: white;
+    background: black;
+    padding: 0 10px;
+    line-height: 36px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgb(22, 22, 22);
+    transition: .2s;
+}
+
+.bodyFoot ul :hover a {
+    filter: blur(2px);
+}
+
+.bodyFoot ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+    filter: none;
+}
+
+.bodyFoot ul li .fb:hover {
+    background: rgb(66 103 178);
+}
+
+.bodyFoot ul li .ig:hover {
+    background: #833ab4;
+}
+
+.bodyFoot ul li .tw:hover {
+    background: #00acee;
+}
+
+.bodyFoot ul li .yt:hover {
+    background: #c4302b;
+}
+
+.bodyFootH4 {
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN INDEX */
+.bodyMain {
+    grid-area: main;
+    background: black;
+}
+
+.bodyMain h2 {
+    background-color: rgb(61, 248, 4);
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    font-size: 23px;
+    border-radius: 20px;
+    border-color: red;
+    font-family: 'Anton', sans-serif;
+    margin-top: 10px;
+}
+
+.mainImg {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    flex-wrap: wrap;
+
+}
+
+.bodyMain p {
+    background-color: rgb(61, 248, 4);
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 20px;
+    padding-top: 10px;
+    border-radius: 20px;
+    width: 400px;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/*MAIN CONTACTO*/
+
+.bodyContact {
+    grid-area: main;
+    background-color: black;
+    width: 100vw;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.bodyContact h1 {
+    background-color: rgb(61, 248, 4);
+    text-align: center;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    height: 45px;
+    border-radius: 10px;
+    width: 200px;
+
+}
+
+.bodyContactoForm {
+    border-radius: 15px;
+    border-color: rgb(61, 248, 4);
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    justify-content: center;
+}
+
+.formItem label {
+    padding: .5em 1em .5em 0;
+    color: rgb(61, 248, 4);
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+.formInput {
+    background-color: black;
+    color: rgb(61, 248, 4);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.formDivButton {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+
+.formButton:hover {
+    transition: .2s;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+}
+
+.formInput:hover {
+    transition: .2s;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+    border-color: rgb(61, 248, 4);
+}
+
+/*MAIN COMPRAR*/
+
+.comprarMain {
+    grid-area: main;
+    background: black;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.comprarSeccion1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seccion1H1 {
+    background-color: rgb(61, 248, 4);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    height: 40px;
+}
+
+.comprarList {
+    background-color: rgb(61, 248, 4);
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 600px;
+    font-size: 1.30rem;
+}
+
+.comprarList ul {
+
+    text-align: center;
+    margin: 30px;
+}
+
+.comprarList ul li {
+    margin: 40px;
+}
+
+.comprarSeccion2 h1 {
+    background-color: rgb(61, 248, 4);
+    text-align: center;
+    border-radius: 10px;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.comprarSeccion2 table {
+    background: rgb(61, 248, 4);
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.comprarTableItem {
+    border: black 2px solid;
+}
+
+.comprarTable {
+    margin: 20px;
+}
+
+/* MAIN NOSOTROS*/
+
+.nosotros {
+    grid-area: main;
+    text-align: center;
+    background-color: black;
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100vw;
+}
+
+.nosotros h1 {
+    background-color: rgb(61, 248, 4);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    height: 40px;
+}
+
+.nosotrosUl {
+    background-color: rgb(61, 248, 4);
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 600px;
+    font-size: 1.30rem;
+}
+
+.nosotrosUl ul {
+    margin: 40px;
+}
+
+.nosotrosUl ul li {
+    margin: 30px;
+}
+
+.nosotros h3 {
+    text-align: center;
+    color: rgb(61, 248, 4);
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.nosotrosVideo {
+    display: flex;
+    justify-content: center;
+}
+
+/*MAIN PRODUCTOS*/
+
+.mainProduct {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100vw;
+    padding-top: 20px;
+}
+
+.buzos h1,
+.remeras h1 {
+    background: rgb(61, 248, 4);
+    text-align: center;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.buzosProduct,
+.remerasProduct {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+.buzosProductItem,
+.remerasProductItem {
+    border: 2px solid rgb(61, 248, 4);
+    padding-bottom: 5px;
+}
+
+.buzosProductItem img,
+.remerasProductItem img {
+    width: 300px;
+}
+
+.buzosProductItem h3,
+.remerasProductItem h3 {
+    color: rgb(61, 248, 4);
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.buzosProductItem h4,
+.remerasProductItem h4 {
+    color: rgb(61, 248, 4);
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.buzosImg:hover,
+.remerasImg:hover {
+    transition: .2s;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+}
+
+.productText {
+    text-align: center;
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:525px) {
+
+    /*GRID*/
+    .conteiner {
+        grid-template-columns: 1fr;
+    }
+
+    /*HEADER*/
+    .bodyHeader img {
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+        margin-right: 35px;
+    }
+
+    .bodyHeaderNav ul li a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+
+    .bodyHeaderMenu label {
+        display: block;
+        color: rgb(0, 0, 0);
+        background: #ffffff;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .bodyHeaderNav {
+        position: absolute;
+        width: 50%;
+        margin-left: -70%;
+    }
+
+    .bodyHeaderNav ul {
+        flex-direction: column;
+    }
+
+    #buttonMenu:checked~.bodyHeaderNav {
+        margin: 0;
+    }
+
+    #buttonMenu {
+        display: none;
+    }
+
+    .bodyHeader {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    /*MAIN INDEX*/
+
+    .bodyMain p {
+        width: 250px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mainImg {
+        flex-direction: column;
+        margin: 15px;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .conteiner {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:598px) {
+    .mainImg {
+        gap: 20px;
+    }
+
+    /*MAIN COMPRAR*/
+    .comprarSeccion1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .comprarList {
+        width: 250px;
+        font-size: 1rem;
+    }
+
+    .comprarList ul {
+        text-align: left;
+        margin: 10px;
+    }
+
+    .comprarList ul li {
+        margin: 18px;
+    }
+
+    /*MAIN NOSOTROS*/
+    .nosotros {
+        width: 100vw;
+    }
+
+    .nosotrosUl {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .nosotrosUl ul li {
+        margin: 5px;
+    }
+
+    .nosotrosVideo {
+        margin: 15px;
+        text-align: center;
+        margin: auto;
+    }
+
+    /*MAIN PRODUCTOS*/
+    .buzosProduct,
+    .remerasProduct {
+        flex-direction: column;
+    }
+
+    .buzosProductItem,
+    .remerasProductItem {
+        width: 300px;
+        justify-content: center;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .buzos h1,
+    .remeras h1 {
+        width: 200px;
+    }
+
+    .productText {
+        text-align: center;
+    }
+}
