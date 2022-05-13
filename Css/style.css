@@ -431,8 +431,9 @@
 .buzosImg:hover,
 .remerasImg:hover {
     transition: .2s;
-    transform: translateY(-3px) scale(1.05);
+    transform: translateY(-5px) scale(1.10);
     box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+    border: 5px solid rgb(61, 248, 4);    
 }
 
 .productText {
